@@ -52,6 +52,6 @@ Route::namespace('Master')->prefix('master')->name('master.')->group(function(){
 Route::get('/trans/leads/data', 'Trans\leadsController@data')->name('trans.leads.data');
 Route::namespace('Trans')->prefix('trans')->name('trans.')->group(function(){
     Route::resource('/leads', 'leadsController');
+    Route::resource('/optys', 'optysController');
+    Route::resource('/quots', 'quotsController');
 });
-
-

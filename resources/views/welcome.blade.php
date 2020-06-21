@@ -93,6 +93,7 @@
             </h2>
             <div class="text-center text-lg-left">
               <a href="{{ route('login') }}" class="btn-get-started scrollto">Login</a>
+              <a href="{{ route('login') }}" class="btn-get-started scrollto">Trial 30 Days</a>
             </div>
           </div>
         </div>
