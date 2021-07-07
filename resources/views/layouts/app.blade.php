@@ -196,28 +196,26 @@
                 <div id="quotationPages" class="collapse" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Sales Activity:</h6>
-                        <a class="collapse-item" href="login.html">Appoinment</a>
-                        <a class="collapse-item" href="register.html">E-mail</a>
-                        <a class="collapse-item" href="forgot-password.html">Phone Call</a>
-                        <a class="collapse-item" href="forgot-password.html">Activity List</a>
+                        <h6 class="collapse-header">Opportunity:</h6>
+                        <a class="collapse-item" href="{{ route('trans.optys.index') }}">Opportunity List</a>
+                        <hr>
+                        <a class="collapse-item" href="{{route('trans.optys.create')}}">Add New Opportunity</a>
                     </div>
                 </div>
             </li>
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#salesOrder"
-                    aria-expanded="true" aria-controls="salesOrder">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#quotation"
+                    aria-expanded="true" aria-controls="quotation">
                     <i class="fas fa-fw fa-file-signature"></i>
                     <span>Quotation</span>
                 </a>
-                <div id="salesOrder" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div id="quotation" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Sales Activity:</h6>
-                        <a class="collapse-item" href="login.html">Appoinment</a>
-                        <a class="collapse-item" href="register.html">E-mail</a>
-                        <a class="collapse-item" href="forgot-password.html">Phone Call</a>
-                        <a class="collapse-item" href="forgot-password.html">Activity List</a>
+                        <h6 class="collapse-header">Quotation:</h6>
+                        <a class="collapse-item" href="{{ route('trans.quots.index') }}">Quotation List</a>
+                        <hr>
+                        <a class="collapse-item" href="{{route('trans.quots.create')}}">Add New Quotation</a>
                     </div>
                 </div>
             </li>

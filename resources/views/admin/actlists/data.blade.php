@@ -46,7 +46,7 @@
                                 <a class="dropdown-item"
                                     href="{{route('admin.actlists.checInOut')}}?id={{$actlist->id}}">Submit</a>
                                 @endif
-                                <a class="dropdown-item" href="#">Convert</a>
+                                <a class="dropdown-item" href="{{route('trans.leads.create')}}">Convert</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{route('admin.actlists.edit',$actlist->id)}}">Detail</a>
                             </div>
@@ -82,7 +82,7 @@
                                 @if ($actlist->idType==1)
                                 <p class="text-sm"><i class="fa fa-file-alt "></i> Notes :
                                     {{substr($actlist->remarks,0,50)}} {{ (strlen($actlist->remarks)<50)?'':'...' }}
-                                </p>
+                                </p>'[p'
                                 <p class="text-sm"><i class="fa fa-clock"></i> Estimate Time :
                                     {{ ($actlist->estimateTime=='00:00:00')? '' : date('H:i',strtotime($actlist->estimateTime)) }}
                                 </p>
